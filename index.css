@@ -1,1 +1,309 @@
 /* your styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e1e1e1;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    color: #585858;
+}
+header, footer {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+header {
+    top: 0;
+}
+
+header h1 {
+    background-color: #524f5a;
+    color: #e1e1e1;
+    padding: 30px 0 30px 16px;
+    z-index: 9;
+    width: 100%;
+    margin: 0;
+}
+
+header nav {
+    background-color: #e1e1e1;
+}
+
+header nav ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+header nav li {
+    border-bottom: 5px solid #b7b7b7;
+    
+}
+
+header nav a {
+    color: #585858;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+header nav a:last-of-type {
+    padding-right: 20px;
+}
+
+.link.active {
+    color: #589D9F;
+}
+
+li .link.active {
+    color: #589D9F;
+    border-bottom: 5px solid #336666;
+}
+
+header, h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 5.653em;
+    font-weight: 700;
+}
+h1, h2, nav a{
+    font-weight: 900;
+}
+
+h3, h4 {
+    font-weight: 200;
+}
+
+section::after {
+    content: '§';
+}
+
+main {
+    position: relative;
+    z-index: 5;
+}
+
+main h3 {
+    font-size: 1.438rem;
+}
+main p {
+    font-size: 0.75rem;
+}
+
+footer {
+    background-color: #3E3C46;
+    bottom: 0;
+    color: #cfcfd0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul {
+    padding-left: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    border-right: 2px solid #cfcfd0;
+    padding: 0 10px 0 10px;
+}
+
+footer nav ul li:last-of-type {
+    border-right: none;
+}
+
+footer a {
+    color: #cfcfd0;
+}
+
+.font-small {
+    font-size: small;
+}
+
+.visually-hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+/* mobile */
+/* portrait */
+@media screen and (max-width: 767px) {
+    /* header {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/Rebel_Alliance_logo.svg);
+        background-position-x: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+        opacity: 0.125;
+    } */
+    .logo {
+        background-color: #e1e1e1;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/Rebel_Alliance_logo.svg);
+    }
+
+    h1 {
+        background-color: #524f5a;
+        background-position-x: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+        background-color: #524f5a;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/Rebel_Alliance_logo.svg);
+
+    }
+
+    main {
+        padding-top: 243px;
+        padding-left: 32px;
+        width: 82%;
+    }
+
+    li .link.active {
+        padding-right: 100%;
+    }
+
+    footer nav ul {
+        padding-left: 5px;
+    }
+
+    footer aside {
+        padding-right: 12px;
+    }
+
+}
+
+/* landscape */
+@media screen and (max-width: 677px) and (orientation: landscape) {
+    header h1 {
+        padding-left: 15px;
+    }
+
+    main {
+        padding-left: 95px;
+        width: 69%; /* target/context 470px/667px */
+    }
+
+    .section-1 {
+        padding-top: 195px;
+    }
+
+    footer ul {
+        padding-left: 15px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* opacity: 0.125; */
+        text-align: center;
+    }
+
+    header h1 {
+        background-color: #524f5b;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/Rebel_Alliance_logo.svg);
+        margin: 0 auto;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul li {
+        display: inline;
+    }
+
+    main {
+        margin: 0 auto;
+        padding-top: 193px;
+        width: 67%; /* 513px/768px */
+
+    }
+
+    footer nav {
+        padding-left: 64px;
+    }
+
+    footer aside {
+        padding-right: 64px;
+    }
+}
+
+/* tablet landscape */
+@media screen and (min-width: 1024px) {
+    main {
+        width: 50%; /* 514px/1024px */
+    }
+
+    footer nav {
+        padding-left: 192px;
+    }
+
+    footer aside {
+        padding-right: 192px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1025px) {
+    main {
+        padding-top: 420px;
+        padding-bottom: 200px;
+        width: 48%; /* 577px/1200; */
+    }
+
+    header h1 {
+        background-color: #000000;
+        padding-top: 254px;
+    }
+
+    .background-image {
+        position: relative;
+        overflow: hidden;
+        transform: rotate(0deg);
+    }
+
+    .background-image:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background:  url(https://2.bp.blogspot.com/_DuAMT8iTg8o/TNB7ySqykiI/AAAAAAAABJM/y8SK8bxNV4Q/s1600/xwing.jpg) center center no-repeat;
+        background-size: contain;
+        transform: rotate(-35deg) scale(2) scaleX(-1);
+        width: 77%;
+        height: 100%;
+        top: 10%;
+        left: 12%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer nav {
+        padding-left: 22%; /* 280/1200 */
+    }
+
+    footer aside {
+        padding-right: 22%; /* 280/1200 */
+    }
+}

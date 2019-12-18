@@ -72,7 +72,7 @@ header, h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 5.653em;
+    font-size: 5.653rem;
     font-weight: 700;
 }
 h1, h2, nav a{
@@ -142,14 +142,6 @@ footer a {
 /* mobile */
 /* portrait */
 @media screen and (max-width: 767px) {
-    /* header {
-        background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/Rebel_Alliance_logo.svg);
-        background-position-x: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 0;
-        opacity: 0.125;
-    } */
     .logo {
         background-color: #e1e1e1;
         background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/Rebel_Alliance_logo.svg);
@@ -167,8 +159,7 @@ footer a {
     }
 
     main {
-        padding-top: 243px;
-        padding-left: 32px;
+        padding: 243px 0 100px 32px;
         width: 82%;
     }
 
@@ -213,7 +204,6 @@ footer a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* opacity: 0.125; */
         text-align: center;
     }
 
@@ -233,7 +223,7 @@ footer a {
 
     main {
         margin: 0 auto;
-        padding-top: 193px;
+        padding: 193px 0 120px 0;
         width: 67%; /* 513px/768px */
 
     }
@@ -251,14 +241,6 @@ footer a {
 @media screen and (min-width: 1024px) {
     main {
         width: 50%; /* 514px/1024px */
-    }
-
-    footer nav {
-        padding-left: 192px;
-    }
-
-    footer aside {
-        padding-right: 192px;
     }
 }
 
@@ -299,11 +281,17 @@ footer a {
         flex-direction: row;
     }
 
+    footer nav, footer aside {
+        width: 100%;
+    }
+
     footer nav {
         padding-left: 22%; /* 280/1200 */
+        text-align: left;
     }
 
     footer aside {
         padding-right: 22%; /* 280/1200 */
+        text-align: right;
     }
 }

@@ -5,7 +5,6 @@ const navLinks = Array.from(document.querySelectorAll('.link'));
 navLinks.forEach(link => {
     link.addEventListener('click', event => {
         const target = link.dataset.target;
-        console.log(target);
 
         navLinks.forEach(t => t.classList.remove('active'));
         link.classList.add('active');
